@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.imgContainerDetail {
+  width: 35%;
+}
+
+img {
+  width: 100%;
+}
