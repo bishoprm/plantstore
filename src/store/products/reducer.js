@@ -17,7 +17,7 @@ const initialState = [
     Similar in appearance to the deadly poison hemlock, D. carota is distinguished by a mix of tripinnate leaves, fine hairs on its solid green stems and on its leaves, a root that smells like carrots, and occasionally a single dark red flower in the center of the umbel.`,
     price: 14.99,
     img:
-      "https://images-na.ssl-images-amazon.com/images/I/71cWn8os7dL._AC_SL1080_.jpg",
+      "https://www.gardeningknowhow.com/wp-content/uploads/2017/11/queen-annes-lace.jpg",
     tags: [],
     popularity: "",
     name: "Wild carrot",
@@ -88,7 +88,9 @@ const initialState = [
   },
   {
     id: 8,
-    description: "",
+    description: `Allium giganteum, common name giant onion, is an Asian species of onion, native to central and southwestern Asia but cultivated in many countries as a flowering garden plant. It is the tallest species of Allium in common cultivation, growing to 1.5 metres (4.9 ft).
+    In early to midsummer, small globes of intense purple umbels appear, followed by attractive fruiting umbels. A popular cultivar, 'Globemaster', is shorter (80 centimetres (31 in)) but produces much larger, deep violet, umbels (15–20 centimetres (5.9–7.9 in)). Both varieties have been granted the Royal Horticultural Society's Award of Garden Merit.
+    In nature, the species is found in Iran, Afghanistan, Turkey, Turkmenistan, Tajikistan, and Uzbekistan.`,
     price: 23.99,
     img:
       "https://i.pinimg.com/originals/d4/67/ee/d467ee7c9e9b1c09fbb2acd0bc9154e9.jpg",
