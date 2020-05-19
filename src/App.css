@@ -1,9 +1,15 @@
 .App {
   text-align: center;
 }
+
 .imgContainer {
   width: 250px;
 }
+
+.imgContainerDetail {
+  width: 35%;
+}
+
 img {
   width: 100%;
 }

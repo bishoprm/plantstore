@@ -13,7 +13,6 @@ export default function App() {
       <Switch>
         {/* more pages to be added here later */}
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/ProductDetails" component={ProductDetails} />
         <Route path="/ProductDetails/:productID" component={ProductDetails} />
         <Route path="/Cart" component={Cart} />
       </Switch>
