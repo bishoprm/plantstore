@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.imgContainer {
+  width: 250px;
+}
+
 .imgContainerDetail {
   width: 35%;
 }
