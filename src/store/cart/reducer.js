@@ -4,9 +4,9 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  const newPrice = (filteredItems, price) => {
+  const computePrice = (filteredItems, price) => {
     if (filteredItems.length !== 0) {
-      return state.totalPrice - price;
+      return Math.round((state.totalPrice - price) * 100) / 100;
     } else {
       return state.totalPrice;
     }
@@ -17,22 +17,25 @@ export default (state = initialState, action) => {
       return {
         ...state,
         productIds: [...state.productIds, action.payload.productId],
-        totalPrice: state.totalPrice + action.payload.price,
+        totalPrice:
+          Math.round((state.totalPrice + action.payload.price) * 100) / 100,
       };
     }
     case "REMOVE_FROM_CART": {
       const filteredItems = state.productIds.filter((productId) => {
         return productId === action.payload.productId;
       });
+      const newPrice = computePrice(filteredItems, action.payload.price);
+
       filteredItems.pop();
-      console.log("filtered items:", filteredItems);
+
       const keepItems = state.productIds.filter((productId) => {
         return productId !== action.payload.productId;
       });
       return {
         ...state,
         productIds: [...keepItems, ...filteredItems],
-        totalPrice: newPrice(filteredItems, action.payload.price),
+        totalPrice: newPrice,
       };
     }
     default:
