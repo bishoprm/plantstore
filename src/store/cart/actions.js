@@ -4,3 +4,10 @@ export function addToCart(id, price) {
     payload: { productId: id, price: price },
   };
 }
+
+export function rmFromCart(id, price) {
+  return {
+    type: "REMOVE_FROM_CART",
+    payload: { productId: id, price: price },
+  };
+}

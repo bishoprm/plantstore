@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectNumOfItems } from "../store/cart/selectors";
+import { addToCart, rmFromCart } from "../store/cart/actions";
 
 function Buttons(props) {
   const dispatch = useDispatch();
@@ -10,14 +11,14 @@ function Buttons(props) {
     <div>
       <button
         className="buttons"
-        /* onClick={() => dispatch(rmFromCart(props.id, props.price))} */
+        onClick={() => dispatch(rmFromCart(props.id, props.price))}
       >
         -
       </button>
       <span>{numOfItems} in cart</span>
       <button
         className="buttons"
-        /* onClick={() => dispatch(addToCart(props.id, props.price))} */
+        onClick={() => dispatch(addToCart(props.id, props.price))}
       >
         +
       </button>
