@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Buttons from "./Buttons";
 
 export default function HomePage(props) {
   return (
@@ -15,7 +16,7 @@ export default function HomePage(props) {
         return <button>{tag}</button>;
       })}
       <p>€{props.price}</p>
-      <button>Add to Cart</button>
+      <Buttons id={props.productID} price={props.price} />
     </div>
   );
 }
