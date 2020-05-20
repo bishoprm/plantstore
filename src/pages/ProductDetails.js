@@ -24,7 +24,7 @@ export default function ProductDetails() {
             <img src={product.img} />
           </div>
           <p>€ {product.price}</p>
-          <Buttons id={product.id} price={product.price} />
+          <Buttons cart={false} id={product.id} price={product.price} />
         </div>
         <section>{product.description}</section>
       </div>

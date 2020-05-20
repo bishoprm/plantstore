@@ -16,7 +16,7 @@ export default function HomePage(props) {
         return <button>{tag}</button>;
       })}
       <p>€{props.price}</p>
-      <Buttons id={props.productID} price={props.price} />
+      <Buttons cart={false} id={props.productID} price={props.price} />
     </div>
   );
 }
