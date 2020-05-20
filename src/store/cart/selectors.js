@@ -7,9 +7,5 @@ export const selectNumOfItem = (id) => (state) => {
 };
 
 export const selectNumOfItems = (state) => {
-  if (state.cart.productIds === []) {
-    return 0;
-  } else {
-    return state.cart.productIds.length;
-  }
+  return state.cart.productIds.length;
 };
