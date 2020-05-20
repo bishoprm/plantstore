@@ -9,3 +9,11 @@ export const selectNumOfItem = (id) => (state) => {
 export const selectNumOfItems = (state) => {
   return state.cart.productIds.length;
 };
+
+export const selectItems = (state) => {
+  return state.cart.productIds;
+};
+
+export const selectTotal = (state) => {
+  return state.cart.totalPrice;
+};
