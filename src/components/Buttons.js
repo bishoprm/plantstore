@@ -11,7 +11,7 @@ function Buttons(props) {
     <div>
       <button
         className="buttons"
-        onClick={() => dispatch(rmFromCart(props.id, props.price))}
+        onClick={() => dispatch(rmFromCart(props.id))}
       >
         -
       </button>
@@ -20,10 +20,7 @@ function Buttons(props) {
       ) : (
         <span>{numOfItems} in cart</span>
       )}
-      <button
-        className="buttons"
-        onClick={() => dispatch(addToCart(props.id, props.price))}
-      >
+      <button className="buttons" onClick={() => dispatch(addToCart(props.id))}>
         +
       </button>
     </div>
