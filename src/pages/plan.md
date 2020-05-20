@@ -1,1 +1,0 @@
-- make image clickable with ID
