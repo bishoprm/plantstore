@@ -17,14 +17,20 @@ export default function ProductDetails() {
       {product.tags.map((tag) => (
         <span> {tag}</span>
       ))}
-      <div className="imgContainerDetail">
-        <img src={product.img} />
+      <div className="detailContent">
+        <div className="detailSide">
+          <div className="imgContainerDetail">
+            <img src={product.img} />
+          </div>
+          <p>€ {product.price}</p>
+          <div>
+            <button>-</button>
+            <span>TODO SELECT CART</span>
+            <button>+</button>
+          </div>
+        </div>
+        <section>{product.description}</section>
       </div>
-      <p>€ {product.price}</p>
-      <button>-</button>
-      <span>TODO SELECT CART</span>
-      <button>+</button>
-      <section>{product.description}</section>
     </div>
   );
 }
