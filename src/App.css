@@ -32,3 +32,12 @@
 img {
   width: 100%;
 }
+
+.buttons {
+  border-radius: 15px;
+  border: 1px solid black;
+  background: black;
+  color: whitesmoke;
+  font-size: 18px;
+  margin: 10px;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectProductById } from "../store/products/selectors";
+import Buttons from "../components/Buttons";
 
 export default function ProductDetails() {
   const { productID } = useParams();
@@ -23,11 +24,7 @@ export default function ProductDetails() {
             <img src={product.img} />
           </div>
           <p>€ {product.price}</p>
-          <div>
-            <button>-</button>
-            <span>TODO SELECT CART</span>
-            <button>+</button>
-          </div>
+          <Buttons id={product.id} price={product.price} />
         </div>
         <section>{product.description}</section>
       </div>
