@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectNumOfItem } from "../store/cart/selectors";
+import { addToCart, rmFromCart } from "../store/cart/actions";
 
 function Buttons(props) {
   const dispatch = useDispatch();
