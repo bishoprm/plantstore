@@ -15,7 +15,11 @@ function Buttons(props) {
       >
         -
       </button>
-      <span>{numOfItems} in cart</span>
+      {props.cart ? (
+        <span>{numOfItems}x</span>
+      ) : (
+        <span>{numOfItems} in cart</span>
+      )}
       <button
         className="buttons"
         onClick={() => dispatch(addToCart(props.id, props.price))}
