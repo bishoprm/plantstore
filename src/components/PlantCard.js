@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 
 export default function HomePage(props) {
   return (
-    <div>
+    <div className="plantCard">
       <div className="imgContainer">
         <Link to={`/ProductDetails/${props.productID}`}>
           {" "}
@@ -13,8 +13,9 @@ export default function HomePage(props) {
       </div>
       <h3>{props.name}</h3>{" "}
       {props.tags.map((tag) => {
-        return <button>{tag}</button>;
+        return <span className="tagOnPlantCard">{tag}</span>;
       })}
+      <span className="tagOnPlantCard">#{props.popularity} in popularity</span>
       <p>€{props.price}</p>
       <Buttons id={props.productID} price={props.price} />
     </div>

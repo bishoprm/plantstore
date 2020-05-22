@@ -41,3 +41,44 @@ img {
   font-size: 18px;
   margin: 10px;
 }
+.plantContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.plantCard {
+  flex: 1 1 auto;
+  flex-basis: 25%;
+  padding: 1em;
+  margin: 1em;
+}
+
+.filterSortBar {
+  background-color: lightgray;
+  padding: 1em;
+  margin: 1em;
+}
+
+.filterSortContainer {
+  display: flex;
+}
+
+.filterSortButton {
+  border-radius: 15px;
+  border: 1px solid black;
+  background: black;
+  color: whitesmoke;
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+}
+.tagOnPlantCard {
+  border-radius: 15px;
+  border: 1px solid gray;
+  background: whitesmoke;
+  color: black;
+  margin: 3px;
+  padding: 3px;
+  font-size: 0.75em;
+}
