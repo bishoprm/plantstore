@@ -17,7 +17,7 @@ export default function HomePage(props) {
       })}
       <span className="tagOnPlantCard">#{props.popularity} in popularity</span>
       <p>€{props.price}</p>
-      <Buttons id={props.productID} price={props.price} />
+      <Buttons cart={false} id={props.productID} price={props.price} />
     </div>
   );
 }
