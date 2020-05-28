@@ -7,7 +7,7 @@ const initialState = [
     img:
       "https://images-na.ssl-images-amazon.com/images/I/71cWn8os7dL._AC_SL1080_.jpg",
     tags: ["full-sun", "poisonous"],
-    popularity: 3,
+    popularity: 6,
     name: "Angel trumpet",
     latin: "Brugmansia suaveolens",
   },
@@ -16,7 +16,8 @@ const initialState = [
     description: `The wild carrot is a herbaceous, somewhat variable biennial plant that grows between 30 and 60 cm (1 and 2 ft) tall, and is roughly hairy, with a stiff, solid stem. The leaves are tripinnate, finely divided and lacy, and overall triangular in shape. The leaves are bristly and alternate in a pinnate pattern that separates into thin segments. The flowers are small and dull white, clustered in flat, dense umbels. The umbels are terminal and approximately 3–4 inches (8–10 cm) wide. They may be pink in bud and may have a reddish or purple flower in the centre of the umbel. The lower bracts are three-forked or pinnate, which distinguishes the plant from other white-flowered umbellifers. As the seeds develop, the umbel curls up at the edges, becomes more congested, and develops a concave surface. The fruits are oval and flattened, with short styles and hooked spines. The fruit is small, dry and bumpy with protective hairs surrounding it. The fruit of Daucus carota has two mericarps, or bicarpellate. The endosperm of the fruit grows before the embryo. The dried umbels detach from the plant, becoming tumbleweeds. The function of the tiny red flower, coloured by anthocyanin, is to attract insects. Wild carrot blooms in summer and fall. It thrives best in sun to partial shade. Daucus carota is commonly found along roadsides and in unused fields.
     Similar in appearance to the deadly poison hemlock, D. carota is distinguished by a mix of tripinnate leaves, fine hairs on its solid green stems and on its leaves, a root that smells like carrots, and occasionally a single dark red flower in the center of the umbel.`,
     price: 14.99,
-    img:     "https://www.gardeningknowhow.com/wp-content/uploads/2017/11/queen-annes-lace.jpg",
+    img:
+      "https://www.gardeningknowhow.com/wp-content/uploads/2017/11/queen-annes-lace.jpg",
     tags: ["shade"],
     popularity: 4,
     name: "Wild carrot",
@@ -29,7 +30,7 @@ const initialState = [
     img:
       "https://images-na.ssl-images-amazon.com/images/I/714HvBG%2B2EL._AC_SL1400_.jpg",
     tags: ["full-sun", "fragrant"],
-    popularity: 5,
+    popularity: 2,
     name: "Elephant apple",
     latin: "Dillenia indica",
   },
@@ -41,7 +42,7 @@ const initialState = [
     price: 9.99,
     img: "https://live.staticflickr.com/1975/31422937778_d1492b5390_b.jpg",
     tags: ["shade", "poisonous"],
-    popularity: 1,
+    popularity: 3,
     name: "Sneezewort",
     latin: "Achillea ptarmica",
   },
@@ -57,7 +58,7 @@ const initialState = [
     img:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Starr_021012-0014_Pueraria_montana_var._lobata.jpg/1200px-Starr_021012-0014_Pueraria_montana_var._lobata.jpg",
     tags: ["full-sun", "fragrant"],
-    popularity: 2,
+    popularity: 5,
     name: "Kudzu",
     latin: "Pueraria montana",
   },
@@ -71,7 +72,7 @@ const initialState = [
     img:
       "https://images-na.ssl-images-amazon.com/images/I/41qGUQFHigL._AC_SX450_.jpg",
     tags: ["shade", "poisonous"],
-    popularity: 6,
+    popularity: 1,
     name: "Black nightshade",
     latin: "Solanum nigrum",
   },
